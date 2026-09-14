@@ -1,0 +1,32 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "JARVIS: Push-to-Talk",
+      "type": "python",
+      "request": "launch",
+      "module": "jarvis",
+      "args": ["--mode", "ptt"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "JARVIS: Wake Word Mode",
+      "type": "python",
+      "request": "launch",
+      "module": "jarvis",
+      "args": ["--mode", "wake"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "JARVIS: Single Command",
+      "type": "python",
+      "request": "launch",
+      "module": "jarvis",
+      "args": ["--mode", "once", "What time is it?"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    }
+  ]
+}
